@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
   res.send('🚀 JK Consultancy Backend is running successfully!');
 });
 
-// Form submission route (no email)
+// Form submission route (no email sending)
 app.post('/api/form', async (req, res) => {
   try {
     const formData = new Form(req.body);
